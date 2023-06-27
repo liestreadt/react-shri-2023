@@ -1,0 +1,11 @@
+.cardControlsCart {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.55rem;
+    height: fit-content;
+}
+
+.cardControlsAmount {
+    font-size: 1.25rem;
+}

@@ -1,0 +1,46 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.reviewContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #fff;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+    min-width: 6.25rem;
+    max-width: 6.25rem;
+    min-height: 6.25rem;
+    max-height: 6.25rem;
+}
+
+.reviewInfo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 10;
+    gap: 1rem;
+}
+
+.reviewTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 2rem;
+    font-size: 1.25rem;
+}
+
+.message {
+    line-height: 1.5rem;
+}

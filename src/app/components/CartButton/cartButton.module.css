@@ -1,0 +1,18 @@
+.cardControlsCartBtn {
+    display: inline-flex;
+    border: none;
+    border-radius: 4px;
+    padding: 0.25rem;
+    background-color: #f50;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.cardControlsCartBtn:disabled {
+    background-color: #ffa375;
+    cursor: auto;
+}
+
+.cardControlsCartBtn:enabled:active {
+    background-color: #e94e00;
+}
