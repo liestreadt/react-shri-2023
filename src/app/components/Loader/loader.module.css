@@ -1,0 +1,23 @@
+.loading {
+    border: 15px solid #f50;
+    border-radius: 50%;
+    border-top: 15px solid #ccc;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear infinite;
+}
+
+.containerLoader {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

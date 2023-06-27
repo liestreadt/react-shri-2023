@@ -1,0 +1,13 @@
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    background-color: #333333;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.footerContainer a:hover {
+    text-decoration: underline;
+}

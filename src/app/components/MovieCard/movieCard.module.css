@@ -1,0 +1,68 @@
+.movieCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #fff;
+    font-family: 'SF Pro Text', sans-serif;
+    line-height: 1.25rem;
+    color: #1b1f23;
+}
+
+.cardImageContainer {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 6.25rem;
+    max-width: 6.25rem;
+    min-height: 7.5rem;
+    max-height: 7.5rem;
+}
+
+.cardContentContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 10;
+    gap: 1.5rem;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+}
+
+.cardTitle:hover {
+    text-decoration: underline;
+}
+
+.cardGenre {
+    font-style: italic;
+}
+
+.cardControls {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.deleteFromCartBtn {
+    display: inline-flex;
+    align-items: flex-start;
+    border: none;
+    background: transparent;
+    height: fit-content;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.deleteFromCartBtn:hover {
+    transform: scale(1.5);
+}
