@@ -1,24 +1,3 @@
-@font-face {
-    font-family: 'SF Pro Text';
-    src: url('../fonts/sfProText/SFProText-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SF Pro Text';
-    src: url('../fonts/sfProText/SFProText-Semibold.ttf');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SF Pro Text';
-    src: url('../fonts/sfProText/SFProText-RegularItalic.ttf');
-    font-weight: normal;
-    font-style: italic;
-}
-
 * {
     box-sizing: border-box;
     padding: 0;

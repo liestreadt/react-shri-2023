@@ -11,7 +11,7 @@ import { CartContext } from '@/app/cart/page';
 import CartControls from '@/app/components/CartControls/CartControls';
 import { GenresEnum, MovieType } from '@/app/types/types';
 import { useDispatch } from 'react-redux';
-import { openCartModal, removeMovieFromCart } from '@/app/redux/features/cart';
+import { openCartModal } from '@/app/redux/features/cart';
 
 const robotoBold = Roboto({ weight: '700', subsets: ['latin', 'cyrillic'] });
 const robotoItalic = Roboto({ weight: '500', style: 'italic', subsets: ['latin', 'cyrillic'] });

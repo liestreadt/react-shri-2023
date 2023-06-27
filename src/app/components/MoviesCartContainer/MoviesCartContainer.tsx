@@ -5,10 +5,7 @@ import styles from './moviesCartContainer.module.css';
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import { GenresEnum, MovieType } from '@/app/types/types';
-
 import MovieCard from '../MovieCard/MovieCard';
-import { useGetMoviesForCartQuery } from '@/app/redux/services/moviesApi';
 import { RootState } from '@/app/redux/services/store';
 
 export default function MoviesCartContainer() {

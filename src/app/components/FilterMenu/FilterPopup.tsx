@@ -1,10 +1,9 @@
-import { GenresEnum, GenresType } from '@/app/types/types';
+import { GenresEnum } from '@/app/types/types';
 import styles from './filterMenu.module.css';
 
 import React, { MouseEvent } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { changeGenreFilter } from '@/app/redux/features/cart';
-import { RootState } from '@/app/redux/services/store';
 
 export default function FilterPopup({
     refPath,
@@ -17,8 +16,6 @@ export default function FilterPopup({
 }) {
     const dispatch = useDispatch();
 
-    const filterName = useSelector((state: RootState) => state.cart.genreFilter);
-
     const handleCategoryPicked = (event: MouseEvent) => {
         event.stopPropagation();
         const target = event.target as HTMLDivElement;
@@ -29,7 +26,7 @@ export default function FilterPopup({
             if (target.innerText === GenresEnum.fantasy) dispatch(changeGenreFilter('fantasy'));
             if (target.innerText === GenresEnum.notPicked) dispatch(changeGenreFilter('notPicked'));
 
-            inputFieldRef.current.value = GenresEnum[filterName];
+            inputFieldRef.current.value = target.innerText;
             inputFieldRef.current.placeholder = '';
         }
         if (refPath.current) {

@@ -4,7 +4,6 @@ import { closeCartModal, removeMovieFromCart } from '@/app/redux/features/cart';
 import { Roboto } from 'next/font/google';
 import { createPortal } from 'react-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { MouseEvent } from 'react';
 
 const robotoRegular = Roboto({ weight: '500', subsets: ['latin', 'cyrillic'] });
 const robotoBold = Roboto({ weight: '700', subsets: ['latin', 'cyrillic'] });
